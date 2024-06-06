@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:app="clr-namespace:WpfAppTest"
+                    xmlns:calendar="clr-namespace:Calendar;assembly=Calendar">
+    <Style TargetType="{x:Type app:VickyWindow}">
+        <Setter Property="SizeToContent" Value="WidthAndHeight" />
+        <Setter Property="Background" Value="#252525" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type app:VickyWindow}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Width="800" Height="600">
+                        <UniformGrid Columns="2" VerticalAlignment="Top" Margin="20" x:Name="Container">
+                            <DatePicker Margin="20" />
+                            <calendar:SmartDate Margin="20" />
+                        </UniformGrid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

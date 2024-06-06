@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Calendar;component/Themes/Styles/SmartDate.xaml" />
+        <ResourceDictionary Source="/Calendar;component/Themes/Styles/CalendarSwitch.xaml" />
+        <ResourceDictionary Source="/Calendar;component/Themes/Styles/Calendar.xaml" />
+        <ResourceDictionary Source="/Calendar;component/Themes/Styles/CalendarBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
+
